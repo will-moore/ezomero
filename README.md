@@ -39,7 +39,7 @@ Gets omero image object along with pixels as a numpy array. Returns an `omero.ga
 
 ### `get_image_ids(conn, dataset=None, well=None)`
 
-Returns a list of image ids based on project and dataset. Returns a list of `int`s with the desired IDs.
+Return a list of image ids based on image container. If neither dataset nor well is specified, function will return orphans.
 
 ### `get_map_annotation_ids(conn, object_type, object_id, ns=None)`
 
